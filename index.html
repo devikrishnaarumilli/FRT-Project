@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Crop rotation system</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<style>
+body,h1 {font-family: "Oswald", sans-serif}
+body,h2{font-family: "Poppins", sans-serif}
+body,h3 {font-family: "Poppins", sans-serif}
+body,h4 {font-family: "Poppins", sans-serif}
+body,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+
+<nav class="w3-sidebar w3-green w3-collapse w3-top w3-large w3-padding " style="z-index:3;width:300px;font-weight:bold;height=800px;overflow:hidden;" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px;height:100%
+  ">Close Menu</a>
+  <h3 class=""><img src="https://res.cloudinary.com/dqvjoaj4w/image/upload/v1685857254/pic_1_qveupm.jpg" w3-circle width="250" height="250" onclick="onClick(this)" alt="Ganapathi Gardens"><b>Crop Rotation & Recommendation System For Flowers</b></h3>
+  <!--<div class="w3-container">
+    <h3 class="w3-padding-64">Crop Rotation & Recommendation System</h3>
+  </div>-->
+  <div class="w3-bar-block w3-padding-64">
+    <a href="#Home" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><b>Home</b></a>  
+    <a href="https://20a31a05e5.github.io/Future-Ready-Talent-project/techniques.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><b>Rotation Techniques</b></a>
+    <a href="https://20a31a05e5.github.io/Future-Ready-Talent-project/recommendations.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><b>Recommendations</b></a>  
+    <a href="https://20a31a05e5.github.io/Future-Ready-Talent-project/ourwork.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><b>Our Work</b></a>  
+    <a href="https://20a31a05e5.github.io/Future-Ready-Talent-project/contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><b>Contact</b></a>
+    <a href="https://webchat.botframework.com/embed/chat-bot-service-bot?s=DO-NHSAbmuI.wQMCzUIKHPsULZpV74MThvGnGOqzQaEf0N9QrEpkA2U" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><b>Chatbot</b></a>
+  </div>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<!--<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding w3-animate-zoom">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span></span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container w3-animate-zoom" style="margin-top:80px" id="HOME">
+    <h1 class="w3-jumbo w3-animate-zoom"><p style="font-size: 45px"><b>CROP ROTATION & RECOMMENDATION SYSTEM FOR FLOWERS</b></p></h1>
+    <h1 class="w3-xxxlarge w3-text-green"><p style="font-size: 30px"><b>HOME</b></p></h1>
+    <img src="https://res.cloudinary.com/dqvjoaj4w/image/upload/v1685857480/pic_2_gqnz8z.jpg" width="800" height="500" onclick="onClick(this)" alt="Ganapathi Gardens">
+  </div>
+    <!-- Home -->
+    <div class="w3-container w3-animate-zoom" id="Home" style="margin-top:75px">
+      <h1></h1>
+      <p style="font-size: 26px"><b>WHAT IS CROP ROTATION ?</b></p>
+      <p style="font-size: 21px">Crop rotation is the practice of planting different crops sequentially on the same plot of land to improve soil health, optimize nutrients in the soil, and combat pest and weed pressure.</p>
+
+      <p style="font-size: 26px"><b>CROP ROTATION IN FLOWER BED</b></p>
+      <p style="font-size: 21px">Rotating your crops can help produce a bountiful harvest full of yummy and nourishing vegetables, by reducing the chances of pests and diseases and increasing the soil’s health. However, crop rotation is not just for the vegetable garden; it is a good idea to “rotate” your annual flowers as well—by not planting the same type in the same spot year after year.
+      </p>
+    </div>
+    <footer>&copy; Copyright 2023 CROP ROTATION AND RECOMMENDATION SYSTEM FOR FLOWERS</footer>
+      
+  
+  
+
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+
+  
+
+
+    
+ 
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+
+
+</body>
+</html>
